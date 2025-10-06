@@ -3,7 +3,7 @@
       "builder": "NIXPACKS"
     },
     "deploy": {
-      "startCommand": "python flask_api.py",
+      "startCommand": "python Api_key.py",
       "restartPolicyType": "ON_FAILURE",
       "restartPolicyMaxRetries": 10
     }

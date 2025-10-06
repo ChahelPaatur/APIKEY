@@ -333,7 +333,11 @@ if __name__ == '__main__':
     print(f"\nAPI keys stored in: {API_KEYS_FILE}")
     print(f"Total active keys: {len(VALID_API_KEYS)}")
     print("\nStarting server...")
-    print("Local access: http://127.0.0.1:5001")
+    print("Local access: http://127.0.0.1:5000")
     print("="*70 + "\n")
 
-    app.run(debug=False, host='0.0.0.0', port=5001)
+    app.run(debug=False, host='0.0.0.0', port=5000)
+
+if __name__ == '__main__':
+    port = int(os.environ.get('PORT', 5000))
+    app.run(debug=False, host='0.0.0.0', port=port)
