@@ -1,7 +1,7 @@
 from flask import Flask, request, jsonify
 import numpy as np
 import tensorflow as tf
-from tensorflow import keras
+import tf_keras as keras
 import pickle
 import os
 import secrets
